@@ -1,0 +1,19 @@
+{
+  "name": "نظام إدارة وحدة الفتيان الكشفية",
+  "short_name": "كشافة",
+  "description": "نظام إدارة الوحدة الكشفية: أعضاء، لقاءات، حضور، مهام، مالية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#15803d",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

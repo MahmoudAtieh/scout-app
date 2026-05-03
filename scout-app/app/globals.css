@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #f9fafb;
+  color: #0f172a;
+}
+
+/* RTL table fixes */
+table { direction: rtl; }
+
+/* Form inputs */
+input, select, textarea {
+  @apply border border-slate-300 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand bg-white;
+}
+
+input[type="checkbox"], input[type="radio"] { width: auto; }
+
+label {
+  @apply block text-sm font-medium mb-1 text-slate-700;
+}
+
+button {
+  @apply transition-colors;
+}
+
+.btn-primary {
+  @apply bg-brand text-white px-4 py-2 rounded-md hover:bg-brand-dark disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-secondary {
+  @apply bg-white border border-slate-300 text-slate-800 px-4 py-2 rounded-md hover:bg-slate-50;
+}
+.btn-danger {
+  @apply bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-sm border border-slate-200 p-5;
+}
+
+.table-wrap {
+  @apply bg-white rounded-lg shadow-sm border border-slate-200 overflow-x-auto;
+}
+table.data {
+  @apply w-full text-sm;
+}
+table.data th {
+  @apply text-right px-3 py-2 bg-slate-50 font-semibold text-slate-700 border-b border-slate-200;
+}
+table.data td {
+  @apply text-right px-3 py-2 border-b border-slate-100;
+}
+table.data tbody tr:hover {
+  @apply bg-slate-50;
+}
+
+.badge {
+  @apply inline-block px-2 py-0.5 rounded text-xs font-medium;
+}
